@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Happy Valentine's Day ❤️</title>
+    <style>
+        body {
+            background-color: #ffe6f0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+
+        h1 {
+            color: #d63384;
+        }
+
+        p {
+            font-size: 18px;
+            color: #333;
+            max-width: 600px;
+            margin: auto;
+        }
+
+        button {
+            background-color: #ff4d6d;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            margin: 15px;
+            font-size: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #e63956;
+        }
+
+        #hiddenMessage {
+            margin-top: 20px;
+            font-weight: bold;
+            color: #c9184a;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Happy Valentine's Day, My Favorite Human ❤️</h1>
+
+    <p>
+        Congratulations on surviving another year with me.
+        Thank you for tolerating my drama, my mood swings,
+        and my online shopping deliveries.
+        <br><br>
+        I complain about you stealing the blanket…
+        but honestly, life feels safer with you.
+        <br><br>
+        I don’t just love you.
+        I choose you — every single day.
+    </p>
+
+    <button onclick="showReasons()">Reasons Why I Love You</button>
+    <button onclick="loveCheck()">Do You Love Me?</button>
+
+    <div id="hiddenMessage"></div>
+
+    <script>
+        function showReasons() {
+            document.getElementById("hiddenMessage").innerHTML =
+                "✔ You handle my drama like a pro <br>" +
+                "✔ You are my safest place <br>" +
+                "✔ You make even normal days special <br>" +
+                "✔ And obviously... you are stuck with me forever 😌";
+        }
+
+        function loveCheck() {
+            document.getElementById("hiddenMessage").innerHTML =
+                "Correct answer: YES. Smart husband. Very smart. ❤️";
+        }
+    </script>
+
+</body>
+</html>
